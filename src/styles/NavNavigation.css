@@ -1,0 +1,132 @@
+
+.fixed {
+    position: absolute;
+    height: 5px;
+    top: 0px;
+    right:0px ;
+
+}
+
+
+.Nav {
+    color: rgba(255, 255, 255, 0.4) !important;
+    text-decoration: none;
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 23px !important;
+  font-family: 'Cormorant Unicase', serif;
+  transition: color 0.3s ease;
+  padding: 0%;
+}
+.Nav:hover {
+    color: #68c0ff  !important; 
+  }
+
+
+.Navigation {
+    display: flex;
+    justify-content: center;
+    color: white ;
+    gap: 50px; 
+    position: relative; 
+    padding-bottom: 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large Screens (Desktops) */
+@media (min-width: 1200px) {
+  .Navigation {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 50px;
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+  .Nav {
+    color: rgba(255, 255, 255, 0.4) !important;
+    text-decoration: none;
+    font-weight: 900 !important;
+    font-size: 23px !important;
+    font-family: 'Cormorant Unicase', serif;
+    transition: color 0.3s ease;
+    padding: 0%;
+  }
+
+  .Nav:hover {
+    color: #68c0ff !important;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .Navigation {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .Nav {
+    font-size: 20px !important;
+    padding: 0;
+  }
+
+  .Nav:hover {
+    color: #68c0ff !important;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 767px) {
+  .Navigation {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .Nav {
+    font-size: 18px !important;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .Nav:hover {
+    color: #68c0ff !important;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .Navigation {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .Nav {
+    font-size: 16px !important;
+    padding: 5px;
+  }
+
+  .Nav:hover {
+    color: #68c0ff !important;
+  }
+}
+
+

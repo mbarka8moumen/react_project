@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .Social-media {
+        margin-top: 1800px;
+        background-color: rgba(62, 52, 252, 0.4);
+        height: 200px;
+        display: flex;          
+        gap: 10px;            
+        justify-content: center; 
+    }
+    .Social-media h2{
+        justify-content: center;
+        margin-top: 70px;
+        object-fit: contain; 
+        font-family: "Dancing Script", cursive;
+    }
+    
+    .Social-media img {
+        width: 50px;            
+        height: 50px;
+        object-fit: contain;    
+        margin-top: 70px;
+    }
+
+      /* Footer styles */
+  .footer {
+    margin-top: 200px;
+    background-color: #0a3a53;
+    color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+
+  .footer-section .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    background-color: #00283f;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  .footer-bottom img {
+    width: 30px;
+    margin: 0 5px;
+  }
+  .footer span img{
+    width: 40px;
+    height: 40px;
+  }
+
+
+  
+
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+  .Social-media {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 20px;
+  }
+
+  .Social-media h2 {
+      margin-top: 10px;
+      font-size: 20px;
+  }
+
+  .Social-media img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .footer {
+      padding: 30px 15px;
+      justify-content: center;
+  }
+
+  .footer-section {
+      text-align: center;
+      min-width: 180px;
+  }
+
+  .footer-section ul li {
+      margin-bottom: 8px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .Social-media h2 {
+      font-size: 18px;
+  }
+
+  .Social-media img {
+      width: 35px;
+      height: 35px;
+  }
+
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      margin: 10px 0;
+      flex: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-bottom {
+      font-size: 12px;
+  }
+
+  .footer-bottom img {
+      width: 25px;
+  }
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ____________________________________________________________________ */
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    position: relative;
+    top: 500px;
+}
+
+.BOX {
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.BOX:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.CARD {
+    padding: 10px;
+}
+
+.IMG {
+    width: 270px;
+    margin: 10px auto;
+}
+
+.IMG img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.IMG img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.DESC h1 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.DESC span {
+    font-size: 16px;
+    color: #666;
+}
+
+.icon {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon.favorited {
+    color: red;
+}
+
+.button {
+    padding: 12px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #3e34fc, #645cff);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #645cff, #3e34fc);
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .mainContainer {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .IMG {
+      width: 200px;
+  }
+
+  .DESC h1 {
+      font-size: 12px;
+  }
+
+  .DESC span {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+      grid-template-columns: 1fr;
+  }
+
+  .IMG {
+      width: 100%;
+  }
+
+  .button {
+      font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
